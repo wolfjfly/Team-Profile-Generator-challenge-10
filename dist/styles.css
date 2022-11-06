@@ -10,11 +10,9 @@ body {
 
 .team {
     position: relative;
-    top: 50%;
-    left: 50%;
-    width: 120px;
-    height: 120px;
-    color: blue;
+    justify-items: center;
+    color: rgb(255,255,255);
+    font-size: 100px;
 }
 
 .row {
@@ -34,4 +32,7 @@ body {
     color:rgb(249, 246, 238);
     font-weight: bolder;
 }
-
+.container{
+    display:flex;
+    justify-content: center;
+}
