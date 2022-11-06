@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts":{
-    "test": "jset"
+    "test": "jest"
   },
   "dependencies": {
     "inquirer": "^8.2.4",
