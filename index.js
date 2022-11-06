@@ -61,7 +61,7 @@ const addEmployee=[
     {
         type: 'list',
         message: 'Would you like to add another employee?',
-        choices: ['Add Engineer', 'Add Intern', 'finish building my team'],
+        choices: ['Add Engineer', 'Add Intern', 'I am finished building my team'],
         name: 'menu',
     },
 ];
@@ -168,7 +168,7 @@ const createIntern=[
 function Done() {
     const fileName='team';
     fs.writeFile('./dist/generate.html',generateSite(team), function (err) {if(err) {throw err;}
-        console.log('🎆✅👌 Team\'s basic info webpage generated 👌✅🎆')});
+        console.log('✅ Team\'s basic info webpage generated ✅')});
 }
 function buildIntern() {
     inquirer.prompt(createIntern).then(function (answers) {
@@ -190,17 +190,17 @@ function buildEngineer() {
             answers.engineerEmail,
             answers.engineerGithub
         );
-        teamMembers.push(engineer);
-        promptMenu();
+        team.push(engineer);
+        menu();
     });
 }
 function menu() {
     inquirer.prompt(addEmployee).then(function (userChoice) {
         switch (userChoice.menu) {
-            case 'Engineer':
+            case 'Add Engineer':
                 buildEngineer();
                 break;
-            case 'Intern':
+            case 'Add Intern':
                 buildIntern();
                 break;
             default:

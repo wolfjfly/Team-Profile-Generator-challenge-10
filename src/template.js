@@ -5,14 +5,15 @@ function generateSite(team) {
         let managerHtml= `
         <div class='card col-10 col-lg-2'>
                         <div class='card-header'>
-                            ${manager.getName()}, ${manager.getRole()}
-                            <i class='fa-solid fa-building-circle-check'></i>
+                            ${manager.getName()},
+                            ${manager.getRole()}
+                            <i class='fa-solid fa-solid fa-stapler'></i>
                             </div>
                         <div class='card-body'>
                             <ul class='list-group'>
                                 <li class='list-group-item'>ID: ${manager.getId()}</li>
-                                <li class='list-group-item'>Email: <span id='email'><a href='mailto:${manager.getEmail()}'> ${manager.getEmail()}</a></span></li>
-                                <li class='list-group-item'>Office Number: ${manager.getOfficeNumber()}</li>
+                                <li class='list-group-item'><i class="fa-solid fa-envelope"></i>Email: <span id='email'><a href='mailto:${manager.getEmail()}'> ${manager.getEmail()}</a></span></li>
+                                <li class='list-group-item'><i class="fa-sharp fa-solid fa-phone-rotary"></i>Office Number: ${manager.getOfficeNumber()}</li>
                             </ul>
                         </div>
                     </div>
@@ -23,14 +24,15 @@ function generateSite(team) {
         let engineerHtml= `
         <div class='card col-10 col-lg-2'>    
                         <div class='card-header'>
-                            ${engineer.getName()}, ${engineer.getRole()}
-                            <i class='fa-solid fa-helmet-safety'></i>
+                            ${engineer.getName()},
+                            ${engineer.getRole()}
+                            <i class='fa-solid fa-glasses'></i>
                         </div>
                         <div class='card-body'>
                             <ul class='list-group'>
                                 <li class='list-group-item'>ID: ${engineer.getId()}</li>
-                                <li class='list-group-item'>Email: <span id='email'><a href='mailto:${engineer.getEmail()}'> ${engineer.getEmail()}</a></span></li>
-                                <li class='list-group-item'>GitHub: <span id='email'><a target='_blank' href='https://github.com/${engineer.getGithub()}'> ${engineer.getGithub()}</a></span></li>
+                                <li class='list-group-item'><i class="fa-solid fa-envelope"></i>Email: <span id='email'><a href='mailto:${engineer.getEmail()}'> ${engineer.getEmail()}</a></span></li>
+                                <li class='list-group-item'><i class="fa-brands fa-github"></i>GitHub: <span id='email'><a target='_blank' href='https://github.com/${engineer.getGithub()}'> ${engineer.getGithub()}</a></span></li>
                             </ul>
                         </div>
                     </div>
@@ -41,14 +43,15 @@ function generateSite(team) {
         let internHtml= `
         <div class='card col-10 col-lg-2'>
                         <div class='card-header'>
-                            ${intern.getName()}, ${intern.getRole()}
+                            ${intern.getName()}, 
+                            ${intern.getRole()}
                             <i class='fa-sharp fa-solid fa-user-graduate'></i>
                         </div>
                         <div class='card-body'>
                             <ul class='list-group'>
                                 <li class='list-group-item'>ID: ${intern.getId()}</li>
-                                <li class='list-group-item'>Email: <span id='email'><a href='mailto:${intern.getEmail()}'> ${intern.getEmail()}</a></span></li>
-                                <li class='list-group-item'>School: ${intern.getSchool()}</li>
+                                <li class='list-group-item'><i class="fa-solid fa-envelope"></i>Email: <span id='email'><a href='mailto:${intern.getEmail()}'> ${intern.getEmail()}</a></span></li>
+                                <li class='list-group-item'><i class="fa-solid fa-school"></i>School: ${intern.getSchool()}</li>
                             </ul>
                         </div>        
                     </div>
