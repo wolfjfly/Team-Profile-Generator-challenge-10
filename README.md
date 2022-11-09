@@ -1,6 +1,7 @@
 # Team-Profile-Generator-challenge-10
   
   ## Description
+  
   AS A manager
   I WANT to generate a webpage that displays my team's basic info
   SO THAT I have quick access to their emails and GitHub profiles
@@ -22,6 +23,8 @@
   THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu<br>
   WHEN I decide to finish building my team<br>
   THEN I exit the application, and the HTML is generated<br>
+  
+  
 
   [![License Badge](https://img.shields.io/badge/license-MIT-success?style=plastic)](https://choosealicense.com/licenses/mit/)
   
@@ -42,6 +45,9 @@
 
   ## Usage
   In the terminal type ‘node index.js’
+  
+  ##Video Demo
+  https://drive.google.com/file/d/1kNnbVuS_Tpwe4g6Og2tH67fnWZ5Gjm90/view
   
   <img width="1207" alt="Demo" src="https://github.com/wolfjfly/challenge-6-bw/blob/main/assets/video/Challenge-6-working-localy_%20Oct%209%2C%202022%203_55%20PM.gif">
   
